@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    height: 1000px;
+    background-color: #42403f;
+    border-radius: 10px;
+    
+}
+
+.title-bar {
+    width: 100%;
+    height: 60px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    background-color:#666362; /* Green background */
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+    color: white; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000; /* Keeps the title bar on top of other content */
+    border-radius: 10px;
+}
+  
+.time-selector {
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+  
+.picker {
+    width: 100px;
+    height: 180px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    background: 42403f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.picker-text {
+    color: white;
+    font-size: 2rem;
+}
+
+.highlight {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 0;
+    width: 100%;
+    height: 60px; /* Matches single item height */
+    transform: translateY(-50%);
+    background-color: rgba(169, 169, 169, 0.2); /* Semi-transparent blue */
+    pointer-events: none; /* Allow interactions with underlying elements */
+    z-index: 10; /* Ensures it's above the numbers */
+  }
+  
+.picker ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.picker ul li {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+  
+.picker ul li.active {
+    font-size: 2rem;
+    color: #9bcbff;
+    opacity: 1;
+    transform: scale(1.1);
+}
+  
+.picker ul li.hidden {
+    color: #ccc;
+    opacity: 0.2;
+}
+  
+.picker .overlay {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+    height: 80px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    border-bottom: solid;
+    border-color: white;
+}
+
+.green-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    padding: 5px 10px;
+    margin: 5px;
+    width: 200px;
+    height: 80px;
+    background-color: #00b141;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.green-btn:hover {
+    background-color: #00691a;
+}
+
+.hotkey-container {
+    height: 300px;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    position: relative;
+    border-bottom: solid;
+    border-color: white;
+}
+
+.hotkey-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.hotkey-btn-container {
+    height: 80px;
+    margin-top: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotkey-btn {
+    font-size: 2rem;
+    padding: 5px 10px;
+    margin: 5px;
+    width: 200px;
+    height: 80px;
+    background-color: #00b141;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

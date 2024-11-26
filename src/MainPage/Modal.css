@@ -1,0 +1,65 @@
+.timer-modal-container {
+    width: 100vw;
+    height: 100vh;
+    top: 0; /* Ensures it starts from the top of the page */
+    left: 0; /* Ensures it starts from the left of the page */
+    position: fixed;
+
+    background-color: #2f2f2f;
+    z-index: 1001;
+}
+
+.modal-body {
+    color: white;
+    height: 75%;
+    padding: 10px;
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-btns {
+    color: white;
+    height: 25%;
+    padding: 10px;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.red-btn {
+    font-size: 2rem;
+    padding: 5px 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    height: 120px;
+    background-color: #c81c1c;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.red-btn:hover {
+    background-color: #600404;
+}
+
+.resume-btn {
+    font-size: 2rem;
+    padding: 5px 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    height: 120px;
+    background-color: #00b141;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background-color: #00691a;
+}
