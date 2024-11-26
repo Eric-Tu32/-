@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Eric-Tu32/NYCU-volleyball-timer/static/css/main.f53458ab.css",
-    "main.js": "/Eric-Tu32/NYCU-volleyball-timer/static/js/main.97133e90.js",
-    "static/media/alarm.mp3": "/Eric-Tu32/NYCU-volleyball-timer/static/media/alarm.7397c514bb25581e367a.mp3",
-    "index.html": "/Eric-Tu32/NYCU-volleyball-timer/index.html",
-    "main.f53458ab.css.map": "/Eric-Tu32/NYCU-volleyball-timer/static/css/main.f53458ab.css.map",
-    "main.97133e90.js.map": "/Eric-Tu32/NYCU-volleyball-timer/static/js/main.97133e90.js.map"
+    "main.css": "/NYCU-volleyball-timer/static/css/main.f53458ab.css",
+    "main.js": "/NYCU-volleyball-timer/static/js/main.a27c076c.js",
+    "static/media/alarm.mp3": "/NYCU-volleyball-timer/static/media/alarm.7397c514bb25581e367a.mp3",
+    "index.html": "/NYCU-volleyball-timer/index.html",
+    "main.f53458ab.css.map": "/NYCU-volleyball-timer/static/css/main.f53458ab.css.map",
+    "main.a27c076c.js.map": "/NYCU-volleyball-timer/static/js/main.a27c076c.js.map"
   },
   "entrypoints": [
     "static/css/main.f53458ab.css",
-    "static/js/main.97133e90.js"
+    "static/js/main.a27c076c.js"
   ]
 }
