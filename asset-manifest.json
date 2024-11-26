@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/NYCU-volleyball-timer/static/css/main.441d0728.css",
+    "main.css": "/NYCU-volleyball-timer/static/css/main.2f7e05ae.css",
     "main.js": "/NYCU-volleyball-timer/static/js/main.60ab2e81.js",
     "static/media/alarm.mp3": "/NYCU-volleyball-timer/static/media/alarm.7397c514bb25581e367a.mp3",
     "index.html": "/NYCU-volleyball-timer/index.html",
-    "main.441d0728.css.map": "/NYCU-volleyball-timer/static/css/main.441d0728.css.map",
+    "main.2f7e05ae.css.map": "/NYCU-volleyball-timer/static/css/main.2f7e05ae.css.map",
     "main.60ab2e81.js.map": "/NYCU-volleyball-timer/static/js/main.60ab2e81.js.map"
   },
   "entrypoints": [
-    "static/css/main.441d0728.css",
+    "static/css/main.2f7e05ae.css",
     "static/js/main.60ab2e81.js"
   ]
 }
