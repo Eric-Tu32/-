@@ -1,6 +1,6 @@
 import "./Modal.css"
 
-export default function TimerModal({ is_on, toggle, handlePauseStart, isPaused, remainingTime}) {
+export default function TimerModal({ is_on, toggle, handlePauseStart, reset, isPaused, remainingTime}) {
     if (!is_on) return
     
 
@@ -20,6 +20,7 @@ export default function TimerModal({ is_on, toggle, handlePauseStart, isPaused, 
             </div>
             <div className="modal-btns">
                 <button onClick={toggle} className='red-btn'>取消</button>
+                <button onClick={reset} className='gray-btn'>重置</button>
                 {isPaused ? (
                     <button onClick={handlePauseStart} className='resume-btn'>繼續</button>
                 ) : (

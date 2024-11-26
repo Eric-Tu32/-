@@ -63,3 +63,21 @@
 .resume-btn:hover {
     background-color: #00691a;
 }
+
+.gray-btn {
+    font-size: 2rem;
+    padding: 5px 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    height: 120px;
+    background-color: #616161;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gray-btn:hover {
+    background-color: #363636;
+}

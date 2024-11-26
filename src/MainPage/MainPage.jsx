@@ -58,6 +58,14 @@ const MainPage = () => {
         intervalRef.current = null; // Reset the interval ID
     };
 
+    const resetPauseTimer = () => {
+        setIsPaused(true);
+        setIsRunning(false);
+        clearInterval(intervalRef.current); // Clear the interval
+        intervalRef.current = null; // Reset the interval ID
+        setRemainingTime(currentMinute * 60 + currentSecond)
+    }
+
     // Clear the interval on unmount
     useEffect(() => {
         return () => clearInterval(intervalRef.current);
@@ -192,7 +200,7 @@ const MainPage = () => {
             <div className="btn-container">
                 <button className="green-btn" onClick={handleStart}>開始</button>
             </div>
-            <TimerModal is_on={isModalOpen} toggle={handleCancel} handlePauseStart={handlePauseStartToggle} isPaused={isPaused} remainingTime={remainingTime}/>
+            <TimerModal is_on={isModalOpen} toggle={handleCancel} handlePauseStart={handlePauseStartToggle} reset={resetPauseTimer} isPaused={isPaused} remainingTime={remainingTime}/>
             <div className="hotkey-container">
                 <div className="hotkey-text">
                     快捷鍵
